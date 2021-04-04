@@ -4,10 +4,10 @@ import subprocess
 import concurrent.futures
 import sys
 import argparse
+import requets
 import json
-from colorama import init , Style, Back,Fore
-import requests
 from bs4 import BeautifulSoup
+from colorama import init , Style, Back,Fore
 
 parser = argparse.ArgumentParser(description="Detect Rails Site using wappalyzer-cli")
 
@@ -30,9 +30,10 @@ def installation():
 	if "not found" in out:
 		sys.exit()
 
+
 def waplizer(_url_):
 
-	print(Style.DIM+Fore.GREEN+"[-]"+Style.RESET_ALL+Style.DIM+Fore.WHITE+" TESTING / wappalyzer | "+Style.RESET_ALL+Style.BRIGHT+Fore.BLUE+"{}".format(_url_)+Style.RESET_ALL)
+	print(Style.DIM+Fore.GREEN+"[-]"+Style.RESET_ALL+Style.DIM+Fore.WHITE+" TESTING | "+Style.RESET_ALL+Style.BRIGHT+Fore.BLUE+"{}".format(_url_)+Style.RESET_ALL)
 	result = subprocess.Popen(['wappalyzer', '{}'.format(_url_)], stdout=subprocess.PIPE)
 	output = result.stdout.read()
 
@@ -44,20 +45,11 @@ def waplizer(_url_):
 			print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Rails Site Found! |"+Style.BRIGHT+Fore.RED+" {}".format(_url_)+Style.RESET_ALL)
 			f2.write(_url_+"\n")
 
-
 def csrf_param(_url_):
-	print(Style.DIM+Fore.GREEN+"[-]"+Style.RESET_ALL+Style.DIM+Fore.WHITE+" TESTING / csrf-param | "+Style.RESET_ALL+Style.BRIGHT+Fore.BLUE+"{}".format(_url_)+Style.RESET_ALL)
-	req = requests.get(_url_, timeout=15)
+	req = requets.get(_url_, timeout=7)
 	soup = BeautifulSoup(req.content, 'html.parser')
-	try:
-		csrf_pram = soup.find("meta", {"name": "csrf-param"}).attrs['content']
-		if len(csrf_pram) > 1:
-			print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Rails Site Found! |"+Style.BRIGHT+Fore.RED+" {}".format(_url_)+Style.RESET_ALL)
-			f2.write(_url_+"\n")
-		else:
-			pass
-	except Exception as e :
-		waplizer(_url_)
+	print(soup)
+
 
 if __name__ == "__main__":
 
@@ -69,7 +61,6 @@ if __name__ == "__main__":
 		_listUrls_.append(line)
 	f.close()
 	f2 = open(args.output, "w")
-	with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
+	with concurrent.futures.ThreadPoolExecutor(max_workers=15) as executor:
 		executor.map(csrf_param, _listUrls_)
 	f2.close()
-	

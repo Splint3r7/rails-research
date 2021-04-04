@@ -1,1 +1,4 @@
 http://hassankhanyusufzai.com
+http://api.bonobos.com
+http://example.com
+https://stackoverflow.com
