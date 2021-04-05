@@ -1,4 +1,9 @@
 # Author: @Splint3r7
+# -- Detects the Rails Applicaiton
+# -- Using csrf-param tags and the
+# -- using wappalyzer 
+
+############################################################
 
 import subprocess
 import concurrent.futures
@@ -57,7 +62,8 @@ def csrf_param(_url_):
 		else:
 			pass
 	except Exception as e :
-		waplizer(_url_)
+		#waplizer(_url_)
+		pass
 
 if __name__ == "__main__":
 
