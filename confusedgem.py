@@ -2,7 +2,6 @@ import sys
 import os
 
 
-
 if len(sys.argv) != 3:
     print("\nUsage: python3 confusedgem.py <listofgems> <ourip>")
     sys.exit()

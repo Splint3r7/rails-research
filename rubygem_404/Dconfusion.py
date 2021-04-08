@@ -47,14 +47,14 @@ out_file = args.output
 def versions_f(_gemname_):
 
 
-	print(Style.DIM+Fore.GREEN+"[-]"+Style.RESET_ALL+Style.DIM+Fore.WHITE+" TESTING | "+Style.RESET_ALL+Style.BRIGHT+Fore.BLUE+"{}".format(_gemname_)+Style.RESET_ALL)
+	#print(Style.DIM+Fore.GREEN+"[-]"+Style.RESET_ALL+Style.DIM+Fore.WHITE+" TESTING | "+Style.RESET_ALL+Style.BRIGHT+Fore.BLUE+"{}".format(_gemname_)+Style.RESET_ALL)
 	try:
 		#url = "https://rubygems.org/gems/"+_gemname_
 		#print(url)
 		req = requests.get("https://rubygems.org/gems/"+_gemname_, timeout=7, allow_redirects=False)
 		#print(req.status_code)
 		if req.status_code == 404:
-			print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Claimable gem found |"+Style.BRIGHT+Fore.RED+" {}".format(_gemname_)+Style.RESET_ALL)
+		#	print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Claimable gem found |"+Style.BRIGHT+Fore.RED+" {}".format(_gemname_)+Style.RESET_ALL)
 			filew.write(_gemname_+"\n")
 		else:
 		#	print("else")
@@ -77,6 +77,7 @@ if __name__ == "__main__":
 				line_arr = line.split(" ", 1)
 				gem_name = line_arr[0]
 				gem_version = line_arr[1]
+
 				_lista_.append(gem_name)
 			#else:
 			#	print(line)
