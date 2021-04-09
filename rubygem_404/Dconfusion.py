@@ -47,15 +47,15 @@ def versions_f(_gemname_):
 
 
 	print(Style.DIM+Fore.GREEN+"[-]"+Style.RESET_ALL+Style.DIM+Fore.WHITE+" TESTING | "+Style.RESET_ALL+Style.BRIGHT+Fore.BLUE+"{}".format(_gemname_)+Style.RESET_ALL)
-	try:
-		req = requests.get("https://rubygems.org/gems/"+_gemname_, timeout=7, allow_redirects=False)
-		if req.status_code == 404:
-			print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Claimable gem found |"+Style.BRIGHT+Fore.RED+" {}".format(_gemname_)+Style.RESET_ALL)
-			filew.write(_gemname_+"\n")
-		else:
-			pass
-	except:
-		pass
+	#try:
+		#req = requests.get("https://rubygems.org/gems/"+_gemname_, timeout=7, allow_redirects=False)
+		#if req.status_code == 404:
+			#print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Claimable gem found |"+Style.BRIGHT+Fore.RED+" {}".format(_gemname_)+Style.RESET_ALL)
+			#filew.write(_gemname_+"\n")
+		#else:
+		#	pass
+	#except:
+	#	pass
 
 
 if __name__ == "__main__":
@@ -63,7 +63,7 @@ if __name__ == "__main__":
 	logo()
 	_lista_ = []
 	unique_list = []
-	
+
 	filew = open(out_file, "a+")
 	with open(file_path, "r") as f:
 		lines = f.readlines()
@@ -76,8 +76,13 @@ if __name__ == "__main__":
 				gem_version = line_arr[1]
 				_lista_.append(gem_name)
 
-			elif ":" not in line and "GEM" not in line:
-				_lista_.append(line)
+			elif ":" not in line and not "source" in line and not "GEM" in line and "gem" in line:
+				line = line.split("'")
+				for y in line:
+					y = y.strip()
+					if not "gem" in y and ' ' not in y:
+						if len(y) > 1:
+							_lista_.append(y)
 
 	for x in _lista_:
 		if x not in unique_list:

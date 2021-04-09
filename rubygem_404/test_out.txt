@@ -1,3 +1,53 @@
 asdasdajshdjkahsjdh
 asdasdajshdjkahsjdh
 asdasdajshdjkahsjdh
+asdasdajshdjkahsjdh
+gem 'savon'
+gem 'omniauth-twitter'
+gem 'turbolinks'
+gem 'omniauth-github'
+gem 'omniauth-facebook'
+asdasdajshdjkahsjdh
+gem 'omniauth-github'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'savon'
+gem 'turbolinks'
+gem 'omniauth-github'
+gem 'omniauth-twitter'
+gem 'savon'
+gem 'turbolinks'
+gem 'omniauth-facebook'
+asdasdajshdjkahsjdh
+asdasdajshdjkahsjdh
+gem 'omniauth-twitter'
+gem 'savon'
+gem 'omniauth-github'
+gem 'omniauth-facebook'
+gem 'turbolinks'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+asdasdajshdjkahsjdh
+gem 'savon'
+gem 'turbolinks'
+gem 'omniauth-github'
+gem 'turbolinks'
+gem 'savon'
+gem 'omniauth-github'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+asdasdajshdjkahsjdh
+gem 'savon'
+gem 'turbolinks'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+asdasdajshdjkahsjdh
+gem 'omniauth-github'
+GEM
+GEM
+gem 'omniauth-facebook'
+asdasdajshdjkahsjdh
+gem 'omniauth-twitter'
+gem 'savon'
+gem 'turbolinks'
+gem 'omniauth-github'
