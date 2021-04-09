@@ -1,1 +1,7 @@
 asdassadad
+asdassadad
+asdassadad
+asdassadad
+GIT
+capistrano-notifier!
+email_validator!
