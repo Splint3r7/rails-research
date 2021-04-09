@@ -7,6 +7,7 @@ from colorama import init , Style, Back,Fore
 import argparse
 import sys,os
 import concurrent.futures
+import re
 
 if os.name == 'nt':
 	os.system('cls')
@@ -78,11 +79,11 @@ if __name__ == "__main__":
 
 			elif ":" not in line and not "source" in line and not "GEM" in line and "gem" in line:
 				line = line.split("'")
-				for y in line:
+				linex = line[0:2]
+				for y in linex:
 					y = y.strip()
-					if not "gem" in y and ' ' not in y:
-						if len(y) > 1:
-							_lista_.append(y)
+					if not "gem" in y:
+						_lista_.append(y)
 
 	for x in _lista_:
 		if x not in unique_list:

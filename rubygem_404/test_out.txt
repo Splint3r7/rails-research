@@ -51,3 +51,4 @@ gem 'omniauth-twitter'
 gem 'savon'
 gem 'turbolinks'
 gem 'omniauth-github'
+5.10.3
