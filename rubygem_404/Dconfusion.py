@@ -26,7 +26,7 @@ def logo():
 
 		""")
 
-parser = argparse.ArgumentParser(description="Script to find depreciated versions in Gemfile.lock")
+parser = argparse.ArgumentParser(description="Script to find vulnerable GEMSs")
 
 parser.add_argument('-f','--file',
                             help = "Path to Gemfile.lock",
@@ -42,7 +42,6 @@ args = parser.parse_args()
 
 file_path = args.file
 out_file = args.output
-
 
 def versions_f(_gemname_):
 
@@ -63,6 +62,8 @@ if __name__ == "__main__":
 
 	logo()
 	_lista_ = []
+	unique_list = []
+	
 	filew = open(out_file, "a+")
 	with open(file_path, "r") as f:
 		lines = f.readlines()
@@ -78,7 +79,11 @@ if __name__ == "__main__":
 			elif ":" not in line and "GEM" not in line:
 				_lista_.append(line)
 
+	for x in _lista_:
+		if x not in unique_list:
+			unique_list.append(x)
+
 	with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
-		executor.map(versions_f, _lista_)
+		executor.map(versions_f, unique_list)
 
 	filew.close()

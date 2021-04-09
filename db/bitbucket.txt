@@ -1,0 +1,16 @@
+https://paloz.marum.de/bitbucket/projects/SWIFACT/repos/pangaeaclient/browse/Vendor/Rainbow/Gemfile.lock
+https://bitbucket.niis.org/projects/X-ROAD/repos/x-road/browse/src/center-common/Gemfile.lock?at=2857a963fe5479d5ac16928b42d4fba5e4245ff1
+https://project.marklogic.com/repo/projects/AL/repos/bi-tools-tableau/browse/webdataconnector-master/Gemfile.lock
+https://bitbucket.software-quality-lab.com/projects/EIS/repos/protobuf/browse/ruby/Gemfile.lock?at=7e8c893003a1725d2121155f0cb7b24d0ab47cd6
+https://git.earthdata.nasa.gov/projects/CMR/repos/cmr_metadata_preview/browse/Gemfile.lock
+http://dev-bitbucket-1884706140.eu-west-1.elb.amazonaws.com/projects/PUPPET/repos/puppet-rvm/browse/Gemfile.lock?at=v1.1.3
+http://dev-bitbucket-1884706140.eu-west-1.elb.amazonaws.com/projects/PUPPET/repos/puppet-aem/browse/Gemfile.lock?at=5f498b7a4c4d86427fc5cb59bd01c80dc89855df
+https://bitbucket.intdigital.ee.co.uk/projects/PUPPET/repos/puppet-logrotate/browse/Gemfile.lock?at=6a4f39ad55a715a38d90c8c2f061fde883722e9d
+https://git.silpion.de/projects/SENH/repos/alchemy/browse/Gemfile.lock?at=f4cc1d704fc0182f652ca29e40be3c1ef4937370
+https://bitbucket.i2cat.net/projects/TENOR/repos/tenor/browse/vnf-monitoring-repository/Gemfile.lock?at=fdc2c98ee58a83ed0dc24a9607066fbfad84385c
+https://bitbucket.fem.tu-ilmenau.de/projects/SKYNET/repos/bootswatch/browse/bower_components/font-awesome/Gemfile.lock?at=7e6070630176d8a802c4837345d5998eac7c1d7a
+https://bitbucket.baseline.info/users/orane/repos/basedrive-ey/browse/app/plugins/card.io.cordova.mobilesdk/Gemfile.lock?at=dae8552bf071b0e99a8a9daba2bc04aa28903581
+https://stash.netology-group.ru/projects/GEMS/repos/omniauth-eljur/browse/Gemfile.lock?at=91ffa84165b&until=91ffa84165bc2c774601c604312e4bf49d1653e9
+https://bitbucket.netigo.de/projects/COM/repos/backbone.touch/browse/node_modules/grunt/node_modules/underscore.string/Gemfile.lock
+https://code.croc.ru/projects/RND/repos/grunt-croc-qunit/browse/node_modules/grunt/node_modules/underscore.string/Gemfile.lock?at=aeb79c841bde1fde284ac4ac058dc2d77c6c70e8
+http://stash.isfb.ru:7990/projects/RAILS/repos/spree_sagents_analytics/diff/Gemfile.lock?autoSincePath=false&until=40924e43fa676f2db58abff5c73fd5d52a75bf83&at=40924e43fa6
