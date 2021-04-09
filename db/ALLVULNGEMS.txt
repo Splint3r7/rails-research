@@ -1,0 +1,386 @@
+RUBY_PLATFORM.include?('linux')
+0.9.0
+3.2.4
+7.0.0.rc14
+RUBY_PLATFORM.include?('darwin')
+~> 4.6.3
+~> 2.0
+~> 4.0.2
+~> 5.0.0
+~> 2.2.1
+~> 4.2
+1.0.1
+2.99
+1.1.3
+7.0
+1.0.0
+~> 7.2.15
+~> 4.0.5
+~> 4.3.0
+~> 1.0.0
+~> 7.2.6
+~> 0.8.0
+1.1.1
+~> 3.2
+ruby RUBY_VERSION
+6.0
+0.8.0
+~> 6.0
+elsif RUBY_VERSION < "2.3"
+3.0.4
+if RUBY_VERSION >= "2.3"
+if RUBY_VERSION < "2.2"
+if RUBY_VERSION >= "3.0"
+elsif RUBY_VERSION < "2.4"
+else
+end if RUBY_VERSION > "2.4"
+~> 7.1.10
+git_source(:github)
+Gemfile.base
+ruby '2.7.0'
+~> 1.3.1
+ruby '2.6.6'
+ruby "2.6.6"
+1.0.4
+gem 'inherited_resources', '~> 1.7.2'
+PATH
+BUNDLED WITH
+PLATFORMS
+DEPENDENCIES
+2.1.4
+jazzy!
+GIT
+ios-sim-test
+1.17.3
+xcodebuild-rb!
+ios-sim-test!
+1.16.2
+1.17.1
+1.13.6
+beaker!
+1.15.4
+x64-mingw32
+x86-mingw32
+chef!
+chef-config!
+chef-utils!
+ohai!
+chefstyle!
+2.2.4
+ruby-shadow!
+2.0.2
+chef-bin!
+codeclimate!
+u3d!
+1.12.5
+1.16.0
+ruby 2.7.2p137
+RUBY VERSION
+raml_parser!
+ofn-qz
+order_management
+dfc_provider
+1.10.6
+custom_error_message!
+catalog!
+ofn-qz!
+web!
+db2fog!
+dfc_provider!
+ruby 2.5.8p224
+maily_herald!
+ruby 2.6.5p114
+ruby_spec_helpers
+style_closet
+style_closet!
+1.16.1
+fluent-plugin-splunk-hec!
+2.2.12
+ruby_spec_helpers!
+1.14.6
+carrierwave-postgresql!
+x86_64-darwin-19
+1.11.2
+2.2.2
+rack-jekyll!
+erb_lint!
+smart_listing!
+1.16.3
+2.2.5
+exception_notification!
+rails!
+websocket-client-simple!
+ruby 2.4.5p335
+turbolinks!
+queue_classic!
+mswin64
+ruby 2.7.1p83
+2.2.15
+faker!
+x86-mswin32
+2.1.2
+rails-i18n!
+webpacker!
+ruby-terraform!
+samson_airbrake
+samson_assertible
+samson_aws_sts
+samson_gitlab
+samson_aws_ecr
+samson_airbrake_hook
+samson_flowdock
+samson_datadog
+samson_rollbar
+samson_rollbar_hook
+samson_env
+samson_prerequisite_stages
+samson_new_relic
+gcloud_image_tagger
+samson_rollbar_dashboards
+samson_kubernetes
+samson_jenkins_status_checker
+samson_pipelines
+samson_slack_webhooks
+samson_github
+samson_jira
+samson_jenkins
+samson_zendesk
+samson_ledger
+samson_slack_app
+rails-assets-jquery-ujs
+rails-assets-jquery-ui
+rails-assets-jquery-cookie!
+rails-assets-typeahead.js
+rails-assets-jquery-cookie
+rails-assets-x-editable
+gcloud_image_tagger!
+omniauth-github!
+rails-assets-bootstrap-select!
+rails-assets-jquery!
+x86_64-darwin-18
+rails-assets-jsSHA!
+rails-assets-jstimezonedetect!
+rails-assets-jquery-ui!
+rails-assets-typeahead.js!
+rails-assets-bootstrap-select
+samson_aws_sts!
+samson_airbrake_hook!
+rails-assets-jquery-ujs!
+rails-assets-underscore
+samson_assertible!
+samson_airbrake!
+rails-assets-x-editable!
+rails-assets-jsSHA
+samson_ledger!
+samson_aws_ecr!
+samson_env!
+samson_datadog!
+samson_datadog_tracer!
+samson_flowdock!
+samson_github!
+samson_new_relic!
+samson_jira!
+rails-assets-underscore!
+samson_jenkins!
+samson_kubernetes!
+samson_gitlab!
+rails-assets-jstimezonedetect
+rails-assets-jquery
+samson_datadog_tracer
+samson_rollbar!
+samson_jenkins_status_checker!
+samson_prerequisite_stages!
+samson_rollbar_hook!
+samson_slack_app!
+samson_rollbar_dashboards!
+samson_zendesk!
+vault!
+samson_slack_webhooks!
+samson_pipelines!
+middleman!
+ruby 2.6.3
+ruby 2.6.3p62
+sour
+1.16.6
+ruby 2.7.0p0
+ci_reporter_shell
+active-docs
+swagger-ui_rails2
+developer_portal
+active-docs!
+ci_reporter_shell!
+font_assets!
+json-schema!
+sour!
+httpclient!
+developer_portal!
+swagger-ui_rails!
+message_bus_client!
+prawn-core!
+source2swagger!
+swagger-ui_rails2!
+rspec-html-matchers!
+ruby 2.6.6p146
+redis-namespace!
+gitlab-gollum-lib!
+2.0.1
+sidekiq!
+inherited_resources!
+omniauth-openid_connect-providers
+openproject-pdf_export
+openproject-bim
+openproject-auth_plugins
+openproject-avatars
+openproject-documents
+openproject-translations
+dashboards
+costs
+budgets
+openproject-github_integration
+openproject-ldap_groups
+openproject-backlogs
+openproject-openid_connect
+openproject-boards
+openproject-job_status
+openproject-recaptcha
+openproject-auth_saml
+overviews
+openproject-xls_export
+openproject-reporting
+openproject-webhooks
+openproject-two_factor_authentication
+my_page
+my_page!
+openproject-bim!
+dashboards!
+grids!
+openproject-auth_saml!
+costs!
+budgets!
+openproject-boards!
+openproject-avatars!
+openproject-auth_plugins!
+openproject-ldap_groups!
+openproject-pdf_export!
+openproject-openid_connect!
+openproject-meeting!
+openproject-xls_export!
+overviews!
+openproject-documents!
+openproject-github_integration!
+omniauth!
+omniauth-openid_connect-providers!
+omniauth-openid-connect!
+openproject-job_status!
+openproject-webhooks!
+openproject-backlogs!
+openproject-two_factor_authentication!
+openproject-recaptcha!
+openproject-translations!
+openproject-reporting!
+alchemy-devise!
+alchemy_cms!
+rspec-puppet!
+ruby 2.4.0p0
+1.15.3
+1.10.4
+ruby-druid!
+dory!
+kitchen-terraform!
+ruby 2.4.1p111
+docker-sync!
+1.17.2
+rack-ratelimit!
+1.13.3
+metasploit-framework
+metasploit-framework!
+new_google_recaptcha!
+database_cleaner!
+mongoid-elasticsearch!
+1.17.3GIT
+danger!
+mutant!
+expertiza-authlogic!
+mutant-license!
+versioncake!
+2.2.3
+owasp-glue!
+1.13.2
+geared_pagination!
+font_awesome5_rails!
+ruby 2.5.6p201
+ckeditor!
+devise-security!
+paperback!
+2.2.8
+gon-sinatra!
+1.10.3
+react-rails!
+roust!
+localized_language_select!
+jls-lumberjack!
+omnibus-software
+license-management
+1.13.5
+omnibus-software!
+pleaserun!
+axlsx!
+rails_db!
+ruby 2.3.4p301
+ruby 2.5.1p57
+cartodb-common
+fake_net_ldap!
+oauth-plugin!
+cartodb-common!
+checksum!
+checksum
+minimal-mistakes-jekyll!
+appraisal!
+pay!
+2.2.9
+premonition!
+omnibus!
+1.17.2GIT
+veewee!
+danger-rubocop!
+ruby 2.6.0p0
+nats-pure!
+1.13.7
+apollo-federation!
+standard!
+x86_64-darwin-20
+---
+middleman-cli!
+middleman-core!
+simplecov!
+fastlane!
+1.10.2
+universal-java-1.8
+2.2.14
+x86_64-darwin-17
+mercury-rails!
+fake_stripe!
+spree_sagents_analytics!
+spree_sagents_analytics
+futurism!
+center-common!
+center-common
+cmr_metadata_preview
+jasmine-jquery-rails!
+cmr_metadata_preview!
+1.15.1
+jasmine-rails!
+rb-inotify!
+ruby 2.5.5p157
+gitlab-grack!
+jekyll-fdroid!
+ruby 2.3.1p112
+ruby 2.4.2p198
+activeresource!
+grit!
+1.10.5
+albino!
+annotate!
+seed-fu!
+1.16.4
+1.15.0
