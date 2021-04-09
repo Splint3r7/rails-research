@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    spree_sagents_analytics (2.3.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.6)
+  rake
+  spree_sagents_analytics!

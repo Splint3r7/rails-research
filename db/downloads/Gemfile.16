@@ -1,0 +1,23 @@
+source 'https://rubygems.org'
+
+group :test do
+  gem 'berkshelf'
+  gem 'chef-vault'
+  gem 'chefspec'
+  gem 'kitchen-digitalocean'
+  gem 'kitchen-inspec'
+  gem 'kitchen-transport-rsync'
+  gem 'rubocop'
+  gem 'rake'
+  gem 'foodcritic'
+  gem 'test-kitchen'
+  gem 'gitlab-styles'
+  gem 'rb-readline'
+  gem 'pry'
+end
+
+group :ed25519 do
+  gem 'bcrypt_pbkdf'
+  gem 'rbnacl', '<5.0'
+  gem 'rbnacl-libsodium'
+end

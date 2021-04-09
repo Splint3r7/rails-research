@@ -1,0 +1,45 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.0.2)
+    faraday (0.13.1)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.12.2)
+      faraday (>= 0.7.4, < 1.0)
+    full-name-splitter (0.1.2)
+    kgio (2.10.0)
+    mrkt (0.8.0)
+      faraday (> 0.9.0, < 0.14.0)
+      faraday_middleware (> 0.9.0, < 0.13.0)
+    multipart-post (2.0.0)
+    oj (2.17.5)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    raindrops (0.15.0)
+    sentry-raven (2.7.1)
+      faraday (>= 0.7.6, < 1.0)
+    sinatra (1.4.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.1)
+    unicorn (5.0.1)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv (~> 2.0.2)
+  full-name-splitter (~> 0.1.2)
+  mrkt (~> 0.8.0)
+  oj (~> 2.17)
+  sentry-raven (~> 2.7.0)
+  sinatra (~> 1.4.6)
+  unicorn
+
+BUNDLED WITH
+   1.16.0

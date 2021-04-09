@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+gem "knife-solo"
+
+gem "win32-api", "~> 1.5.1", platforms: [:mingw, :x64_mingw]
+
+# for chef-solo on Windows
+#gem "ruby-wmi", platforms: [:mingw, :x64_mingw]
+#gem "win32-service", platforms: [:mingw, :x64_mingw]
