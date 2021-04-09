@@ -73,10 +73,12 @@ if __name__ == "__main__":
 			if "(" in line:
 				fullname = line
 				line_arr = line.split(" ", 1)
+				# To get the gem name from gem (version) basically from lock files
 				gem_name = line_arr[0]
 				gem_version = line_arr[1]
 				_lista_.append(gem_name)
 
+			# to read gem 'gem_name'	
 			elif ":" not in line and not "source" in line and not "GEM" in line and "gem" in line:
 				line = line.split("'")
 				linex = line[0:2]
@@ -85,9 +87,15 @@ if __name__ == "__main__":
 					if not "gem" in y:
 						_lista_.append(y)
 
+			# to read rest of the dependencies
+			elif "https://rubygems.org" not in line and "#" not in line and "GEM" not in line and ":" not in line:
+				_lista_.append(line)			
+
 	for x in _lista_:
 		if x not in unique_list:
-			unique_list.append(x)
+			# To filter '' in array
+			if len(x) > 1:
+				unique_list.append(x)
 
 	with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
 		executor.map(versions_f, unique_list)
