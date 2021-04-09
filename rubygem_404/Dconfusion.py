@@ -47,15 +47,15 @@ def versions_f(_gemname_):
 
 
 	print(Style.DIM+Fore.GREEN+"[-]"+Style.RESET_ALL+Style.DIM+Fore.WHITE+" TESTING | "+Style.RESET_ALL+Style.BRIGHT+Fore.BLUE+"{}".format(_gemname_)+Style.RESET_ALL)
-	#try:
-		#req = requests.get("https://rubygems.org/gems/"+_gemname_, timeout=7, allow_redirects=False)
-		#if req.status_code == 404:
-			#print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Claimable gem found |"+Style.BRIGHT+Fore.RED+" {}".format(_gemname_)+Style.RESET_ALL)
-			#filew.write(_gemname_+"\n")
-		#else:
-		#	pass
-	#except:
-	#	pass
+	try:
+		req = requests.get("https://rubygems.org/gems/"+_gemname_, timeout=7, allow_redirects=False)
+		if req.status_code == 404:
+			print(Style.DIM+Fore.YELLOW+"["+Style.BRIGHT+Fore.GREEN+"+"+Style.RESET_ALL+Style.DIM+Fore.YELLOW+"]"+Style.RESET_ALL+Style.BRIGHT+Fore.RED+" Claimable gem found |"+Style.BRIGHT+Fore.RED+" {}".format(_gemname_)+Style.RESET_ALL)
+			filew.write(_gemname_+"\n")
+		else:
+			pass
+	except:
+		pass
 
 
 if __name__ == "__main__":
