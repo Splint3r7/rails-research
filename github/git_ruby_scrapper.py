@@ -36,14 +36,14 @@ headers = {
 	'User-Agent' : 'Mozilla/5.0 (X11; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0'
 }
 
-def getpages(_org_):
+def getpages(_org_, _lang_):
 
 	em = 0
 
-	#if args.lang:
-	_url_ = "https://github.com/"+_org_+"?q=&type=&language=ruby&sort="
-	#else:
-	#	_url_ = "https://github.com/"+_org_
+	if args.lang:
+		_url_ = "https://github.com/"+_org_+"?q=&type=&language="+_lang_+"&sort="
+	else:
+		_url_ = "https://github.com/"+_org_
 	req = requests.get(_url_, headers=headers)
 
 	if req.status_code == 200:
@@ -57,15 +57,14 @@ def getpages(_org_):
 	
 	return em
 
-def Getting_all_git_repos(_Organization_):
+def Getting_all_git_repos(_Organization_, _Lang_):
 
-	for pages in range(1,getpages(_Organization_)):
+	for pages in range(1,getpages(_Organization_, _Lang_)):
 
-		#if args.lang:
-		
-		_url_ = "https://github.com/"+_Organization_+"/?q=&type=&language=ruby&sort=&page={}".format(pages)
-		#else:
-		#	_url_ = "https://github.com/"+_Organization_+"/?page={}".format(pages)
+		if args.lang:
+			_url_ = "https://github.com/"+_Organization_+"/?q=&type=&language="+_Lang_+"&sort=&page={}".format(pages)
+		else:
+			_url_ = "https://github.com/"+_Organization_+"/?page={}".format(pages)
 
 		req = requests.get(_url_, headers=headers)
 
@@ -95,14 +94,12 @@ if __name__ == "__main__":
 	git_urls_output = open("temp.txt", "w")
 
 	with open(args.file, "r") as orgs:
-		orgss = orgs.read().splitlines()
+		orgss = orgs.readlines()
 
-	#for org in orgss:
-	#	org = org.strip()
-	with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
-		executor.map(Getting_all_git_repos, orgss)
-		#print("\n"+"[+] Fetching {} github projects".format(org)+"\n")
-		#Getting_all_git_repos(org)
+	for org in orgss:
+		org = org.strip()
+		print("\n"+"[+] Fetching {} github projects".format(org)+"\n")
+		Getting_all_git_repos(org, args.lang)
 
 	git_urls_output.close()
 
