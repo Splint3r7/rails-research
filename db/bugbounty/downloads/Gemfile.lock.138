@@ -1,0 +1,53 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    RedCloth (4.2.9)
+    actionmailer (2.3.16)
+      actionpack (= 2.3.16)
+    actionpack (2.3.16)
+      activesupport (= 2.3.16)
+      rack (~> 1.1.0)
+    activerecord (2.3.16)
+      activesupport (= 2.3.16)
+    activeresource (2.3.16)
+      activesupport (= 2.3.16)
+    activesupport (2.3.16)
+    daemons (1.1.9)
+    eventmachine (1.0.0)
+    heroku-nav (0.1.24)
+      json
+      rest-client (>= 1.0)
+    json (1.7.5)
+    mime-types (1.19)
+    pg (0.14.1)
+    rack (1.1.5)
+    rack-ssl-enforcer (0.2.5)
+    rails (2.3.16)
+      actionmailer (= 2.3.16)
+      actionpack (= 2.3.16)
+      activerecord (= 2.3.16)
+      activeresource (= 2.3.16)
+      activesupport (= 2.3.16)
+      rake (>= 0.8.3)
+    rake (10.0.3)
+    rdoc (3.5.3)
+    redcarpet (1.17.1)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  RedCloth (~> 4.2.7)
+  heroku-nav (= 0.1.24)
+  pg (= 0.14.1)
+  rack-ssl-enforcer
+  rails (~> 2.3.16)
+  rdoc (~> 3.5.1)
+  redcarpet (= 1.17.1)
+  thin (= 1.2.7)

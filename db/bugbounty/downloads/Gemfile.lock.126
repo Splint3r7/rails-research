@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    excon (0.45.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  excon

@@ -1,0 +1,53 @@
+PATH
+  remote: .
+  specs:
+    data-sink-client (0.2.1)
+      excon (~> 0.55.0)
+      faraday (> 0.10.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    diff-lcs (1.3)
+    excon (0.55.0)
+    faraday (0.15.0)
+      multipart-post (>= 1.2, < 3)
+    hashdiff (0.3.0)
+    multipart-post (2.0.0)
+    public_suffix (2.0.4)
+    rake (10.5.0)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    safe_yaml (1.0.4)
+    webmock (2.1.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.13)
+  data-sink-client!
+  rake (~> 10.0)
+  rspec (~> 3.0)
+  webmock (~> 2.1)
+
+BUNDLED WITH
+   1.16.1

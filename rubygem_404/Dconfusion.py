@@ -85,7 +85,7 @@ def GemParser(_array_):
 					_lista_.append(y)
 
 				# to read rest of the dependencies
-		elif "https://rubygems.org" not in line and "#" not in line and "GEM" not in line and ":" not in line and "PLATFORMS" not in line and "DEPENDENCIES" not in line and "1.16.0" not in line and "BUNDLED WITH" not in line:
+		elif "https://rubygems.org" not in line and "#" not in line and "GEM" not in line and ":" not in line and "PLATFORMS" not in line and "DEPENDENCIES" not in line and "1.16.0" not in line and "BUNDLED WITH" not in line and "1.11.2" not in line and "VERSION" not in line and "ruby 2." not in line and "PATH" not in line and "2.1.4" not in line and "1.17.3" not in line and "1.14.6" not in line and "GIT" not in line and "1.10.3" not in line and "1.13.3" not in line and "1.16.5" not in line and "1.14.5" not in line and "1.12.5" not in line and "ruby 3." not in line and "2.2.6" and not in line and "1.16.4" not in line "1.10.6" not in line and "1.13.1" and not in line:
 					_lista_.append(line)
 
 

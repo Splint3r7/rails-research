@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description="Extract Github Projects via Organi
 parser.add_argument('-f','--file',
                             help = "List of Organization",
                             type = str,
-                            required = True)
+                            required = False)
 
 parser.add_argument('-o','--output',
                             help = "Output file",
@@ -87,21 +87,21 @@ def ValidateGemfiles(_Url_):
 	req = requests.get(_Url_, timeout=15)
 	if req.status_code == 200:
 		print(_Url_)
-		gemfiles_f.write(args.output)
+		gemfiles_f.write(_Url_+"\n")
 
 if __name__ == "__main__":
 
-	git_urls_output = open("temp.txt", "w")
+	#git_urls_output = open("temp.txt", "w")
 
-	with open(args.file, "r") as orgs:
-		orgss = orgs.readlines()
+	#with open(args.file, "r") as orgs:
+	#	orgss = orgs.readlines()
 
-	for org in orgss:
-		org = org.strip()
-		print("\n"+"[+] Fetching {} github projects".format(org)+"\n")
-		Getting_all_git_repos(org, args.lang)
+	#for org in orgss:
+	#	org = org.strip()
+	#	print("\n"+"[+] Fetching {} github projects".format(org)+"\n")
+	#	Getting_all_git_repos(org, args.lang)
 
-	git_urls_output.close()
+	#git_urls_output.close()
 
 	gemfiles_f = open(args.output, "w")
 	with open("temp.txt", "r") as gemfile:

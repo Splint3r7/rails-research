@@ -1,0 +1,91 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    coderay (1.1.1)
+    curb (0.9.3)
+    diff-lcs (1.2.5)
+    intercom (3.5.1)
+      json (~> 1.8)
+    json (1.8.3)
+    method_source (0.8.2)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    slop (3.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  curb
+  intercom
+  pry
+  rspec
+
+BUNDLED WITH
+   1.12.5
+root@14438d63c281:/intercom# cat Gemfile
+source 'http://rubygems.org'
+
+gem "rspec"
+gem "intercom"
+gem "curb"
+gem "pry"
+root@14438d63c281:/intercom#
+root@14438d63c281:/intercom#
+root@14438d63c281:/intercom#
+root@14438d63c281:/intercom# cat Gemfile.lock
+GEM
+  remote: http://rubygems.org/
+  specs:
+    coderay (1.1.1)
+    curb (0.9.3)
+    diff-lcs (1.2.5)
+    intercom (3.5.1)
+      json (~> 1.8)
+    json (1.8.3)
+    method_source (0.8.2)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    slop (3.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  curb
+  intercom
+  pry
+  rspec
+
+BUNDLED WITH
+   1.12.5

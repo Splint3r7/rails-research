@@ -1,0 +1,70 @@
+PATH
+  remote: .
+  specs:
+    isolated_database_service (0.0.7)
+      isolated_server
+      mysql2
+      rack-parser
+      sinatra
+      sinatra-contrib
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    backports (3.6.7)
+    bump (0.5.3)
+    diff-lcs (1.2.5)
+    isolated_server (0.4.12)
+    multi_json (1.11.2)
+    mysql2 (0.4.2)
+    rack (1.6.4)
+    rack-parser (0.6.1)
+      rack
+    rack-protection (1.5.3)
+      rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rake (10.4.2)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    sinatra (1.4.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-contrib (1.4.6)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bump
+  bundler
+  isolated_database_service!
+  isolated_server
+  mysql2
+  rack-parser
+  rake
+  rspec
+  sinatra
+  sinatra-contrib
+
+BUNDLED WITH
+   1.15.4

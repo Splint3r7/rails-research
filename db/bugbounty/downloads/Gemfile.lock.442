@@ -1,0 +1,49 @@
+GIT
+  remote: git://github.com/railsmachine/nagiosharder.git
+  revision: 2b83c26c8cb47efbf92bd66e7efd7078da0a288d
+  ref: v0.5.0
+  specs:
+    nagiosharder (0.5.0)
+      activesupport
+      hashie (~> 1.2.0)
+      httparty
+      i18n
+      nokogiri
+      rest-client
+      terminal-table
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.2.0)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    hashie (1.2.0)
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    i18n (0.7.0)
+    json (1.8.2)
+    mime-types (2.4.3)
+    mini_portile (0.6.2)
+    minitest (5.5.1)
+    multi_xml (0.5.5)
+    netrc (0.10.2)
+    nokogiri (1.6.5)
+      mini_portile (~> 0.6.0)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    terminal-table (1.4.5)
+    thread_safe (0.3.4)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nagiosharder!

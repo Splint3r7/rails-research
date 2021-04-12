@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    soap2r (1.5.9)
+      httpclient (>= 2.1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bump (0.4.2)
+    httpclient (2.3.4.1)
+    rake (10.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bump
+  rake
+  soap2r!
