@@ -1,0 +1,32 @@
+PATH
+  remote: .
+  specs:
+    allure-ruby-adaptor-api (0.7.3)
+      mimemagic
+      nokogiri (~> 1.7)
+      uuid
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    macaddr (1.7.1)
+      systemu (~> 2.6.2)
+    mimemagic (0.3.2)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.4)
+      mini_portile2 (~> 2.3.0)
+    rake (10.3.2)
+    systemu (2.6.5)
+    uuid (2.3.9)
+      macaddr (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  allure-ruby-adaptor-api!
+  bundler
+  rake
+
+BUNDLED WITH
+   1.16.5

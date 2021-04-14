@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    zohoProjects (0.0.7)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.3.2)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  bundler (~> 1.6)
+  rake
+  zohoProjects!

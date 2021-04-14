@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.7.6)
+    excon (0.78.1)
+    mini_portile2 (2.5.0)
+    nokogiri (1.11.0)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    racc (1.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  excon
+  nokogiri
+
+BUNDLED WITH
+   2.1.4

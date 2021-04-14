@@ -1,0 +1,264 @@
+GIT
+  remote: https://github.com/macdiesel/mongoid-tree
+  revision: b381dd56f1b3b061df8f4b4181d5440dea1602d1
+  specs:
+    mongoid-tree (2.0.0)
+      mongoid (>= 4.0, <= 5.0)
+
+GIT
+  remote: https://github.com/navneet35371/voteable_mongo.git
+  revision: 55fcfe76705ab5da1c9e5670594331b33954c545
+  specs:
+    rs_voteable_mongo (1.0.2)
+      mongoid (>= 3.0, <= 5.0)
+
+GIT
+  remote: https://github.com/rack/rack-contrib.git
+  revision: 6ff3ca2b2d988911ca52a2712f6a7da5e064aa27
+  ref: 6ff3ca2b2d988911ca52a2712f6a7da5e064aa27
+  specs:
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (4.2.8)
+      activesupport (= 4.2.8)
+      builder (~> 3.1)
+    activesupport (4.2.8)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    addressable (2.5.1)
+      public_suffix (~> 2.0, >= 2.0.2)
+    bson (3.2.6)
+    bson_ext (1.5.1)
+    builder (3.2.3)
+    codecov (0.1.10)
+      json
+      simplecov
+      url
+    coderay (1.1.1)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    dalli (2.7.6)
+    delayed_job (4.1.3)
+      activesupport (>= 3.0, < 5.2)
+    delayed_job_mongoid (2.3.0)
+      delayed_job (>= 3.0, < 5)
+      mongoid (>= 3.0, < 7)
+      mongoid-compatibility (>= 0.4.0)
+    diff-lcs (1.3)
+    docile (1.1.5)
+    domain_name (0.5.20170404)
+      unf (>= 0.0.5, < 1.0.0)
+    elasticsearch (1.1.2)
+      elasticsearch-api (= 1.1.2)
+      elasticsearch-transport (= 1.1.2)
+    elasticsearch-api (1.1.2)
+      multi_json
+    elasticsearch-model (0.1.9)
+      activesupport (> 3)
+      elasticsearch (> 0.4)
+      hashie
+    elasticsearch-transport (1.1.2)
+      faraday
+      multi_json
+    enumerize (2.1.2)
+      activesupport (>= 3.2)
+    factory_girl (4.8.0)
+      activesupport (>= 3.0.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
+    faraday (0.12.1)
+      multipart-post (>= 1.2, < 3)
+    ffi (1.9.18)
+    formatador (0.2.5)
+    guard (2.14.1)
+      formatador (>= 0.2.4)
+      listen (>= 2.7, < 4.0)
+      lumberjack (~> 1.0)
+      nenv (~> 0.1)
+      notiffany (~> 0.0)
+      pry (>= 0.9.12)
+      shellany (~> 0.0)
+      thor (>= 0.18.1)
+    guard-unicorn (0.2.0)
+      guard (>= 1.1)
+    hashdiff (0.3.4)
+    hashie (3.5.5)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    i18n (0.8.4)
+    json (2.1.0)
+    kgio (2.11.0)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
+    lumberjack (1.0.12)
+    method_source (0.8.2)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
+    mini_portile2 (2.3.0)
+    minitest (5.10.2)
+    mongo (2.1.2)
+      bson (~> 3.0)
+    mongoid (5.0.0)
+      activemodel (~> 4.0)
+      mongo (~> 2.1)
+      origin (~> 2.1)
+      tzinfo (>= 0.3.37)
+    mongoid-compatibility (0.4.1)
+      activesupport
+      mongoid (>= 2.0)
+    mongoid_cleaner (1.2.0)
+      mongoid (>= 4.0)
+    mongoid_magic_counter_cache (1.1.1)
+      mongoid
+      rake
+    multi_json (1.12.1)
+    multipart-post (2.0.0)
+    nenv (0.3.0)
+    netrc (0.11.0)
+    newrelic_rpm (3.16.3.323)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
+    notiffany (0.1.1)
+      nenv (~> 0.1)
+      shellany (~> 0.0)
+    origin (2.3.1)
+    protected_attributes (1.1.4)
+      activemodel (>= 4.0.1, < 5.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
+    public_suffix (2.0.5)
+    rack (1.6.8)
+    rack-protection (1.5.3)
+      rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rack-timeout (0.4.2)
+    raindrops (0.18.0)
+    rake (12.0.0)
+    rb-fsevent (0.9.8)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
+    rdiscount (2.2.0.1)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rspec (3.6.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
+    rspec-collection_matchers (1.1.3)
+      rspec-expectations (>= 2.99.0.beta1)
+    rspec-core (3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-expectations (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-its (1.2.0)
+      rspec-core (>= 3.0.0)
+      rspec-expectations (>= 3.0.0)
+    rspec-mocks (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-support (3.6.0)
+    ruby_dep (1.5.0)
+    safe_yaml (1.0.4)
+    shellany (0.0.1)
+    simplecov (0.14.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.1)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-param (1.4.0)
+      sinatra (~> 1.3)
+    slop (3.6.0)
+    thor (0.19.4)
+    thread_safe (0.3.6)
+    tilt (2.0.7)
+    tzinfo (1.2.3)
+      thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.4)
+    unicorn (5.3.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
+    url (0.3.2)
+    webmock (3.0.1)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
+    will_paginate (3.1.6)
+    will_paginate_mongoid (2.0.1)
+      mongoid
+      will_paginate (~> 3.0)
+    yajl-ruby (1.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activemodel (~> 4.2.8)
+  bson (~> 3.1)
+  bson_ext
+  bundler
+  codecov
+  dalli
+  delayed_job
+  delayed_job_mongoid
+  elasticsearch (~> 1.1.2)
+  elasticsearch-model (~> 0.1.9)
+  enumerize
+  factory_girl (~> 4.0)
+  faker (~> 1.6)
+  guard
+  guard-unicorn
+  i18n
+  mongoid (~> 5.0.0)
+  mongoid-tree!
+  mongoid_cleaner (~> 1.2.0)
+  mongoid_magic_counter_cache
+  newrelic_rpm
+  nokogiri (~> 1.8.1)
+  protected_attributes
+  pry
+  pry-nav
+  rack-contrib!
+  rack-test
+  rack-timeout
+  rake
+  rdiscount
+  rest-client
+  rs_voteable_mongo!
+  rspec (~> 3.6.0)
+  rspec-collection_matchers
+  rspec-its
+  sinatra
+  sinatra-param (~> 1.4)
+  unicorn
+  webmock (~> 3.0.1)
+  will_paginate_mongoid (~> 2.0)
+  yajl-ruby (~> 1.3.1)
+
+RUBY VERSION
+   ruby 2.4.1p111
+
+BUNDLED WITH
+   1.16.0

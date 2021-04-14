@@ -1,0 +1,39 @@
+PATH
+  remote: .
+  specs:
+    foreman-export-nature (0.0.7)
+      foreman (>= 0.59.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ZenTest (4.4.2)
+    diff-lcs (1.1.3)
+    fakefs (0.4.0)
+    foreman (0.59.0)
+      thor (>= 0.13.6)
+    fuubar (0.0.6)
+      rspec (~> 2.0)
+      rspec-instafail (~> 0.1.8)
+      ruby-progressbar (~> 0.0.10)
+    rspec (2.8.0)
+      rspec-core (~> 2.8.0)
+      rspec-expectations (~> 2.8.0)
+      rspec-mocks (~> 2.8.0)
+    rspec-core (2.8.0)
+    rspec-expectations (2.8.0)
+      diff-lcs (~> 1.1.2)
+    rspec-instafail (0.1.8)
+    rspec-mocks (2.8.0)
+    ruby-progressbar (0.0.10)
+    thor (0.16.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ZenTest (~> 4.4.2)
+  fakefs
+  foreman-export-nature!
+  fuubar
+  rspec (~> 2.8.0)
