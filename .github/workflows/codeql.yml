@@ -21,3 +21,9 @@ jobs:
 
       - name: Analyze code
         uses: github/codeql-action/analyze@v2
+
+      - name: Upload CodeQL results and artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: codeql-artifacts
+          path: .codeql
